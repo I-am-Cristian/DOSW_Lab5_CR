@@ -5,9 +5,9 @@
 
 | Rol | Integrante |
 |-----|------------|
-| Product Owner | [Nombre Integrante 1] |
-| Scrum Master | [Nombre Integrante 2] |
-| Desarrollador | [Nombre Integrante 3] |
+| Product Owner | Cristian Gonzalez |
+| Scrum Master | Rafael Moreno |
+| Desarrollador | Ambos |
 
 ---
 
