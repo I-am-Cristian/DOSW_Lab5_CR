@@ -11,3 +11,7 @@ A través de este ejercicio se busca:
 1.  **Lógica de Negocio:** Implementar las reglas de validación para la creación de cuentas bancarias (10 dígitos, códigos de banco 01/02) y la gestión de saldos.
 2.  **Interoperabilidad:** Preparar el sistema para la generación de reportes tributarios en formatos diversos (PDF para clientes y JSON para entes gubernamentales como la DIAN).
 
+## ROLES EQUIPO SCRUM
+1. **Critian Gonzalez:** Product Owne
+2. **Rafael Moreno:** Scrum Master
+**Ambos:** Desarrollador
