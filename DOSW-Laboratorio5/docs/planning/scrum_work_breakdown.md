@@ -189,24 +189,3 @@
 | **Tareas requisito** | TR-10, TR-11 |
 
 ---
-
-## 4. Video de estimación (Planning Poker)
-
-> _Enlace al video de estimación de la historia de usuario seleccionada (a completar en la Parte 4)_
-
-| Historia estimada en video | Enlace |
-|---------------------------|--------|
-| HU-01 – Crear cuenta bancaria validada | [Insertar enlace aquí] |
-
----
-
-## 5. Resumen de estimaciones (Planning Poker)
-
-| ID | Historia de Usuario | Prioridad | Puntos de Historia |
-|----|--------------------|-----------|--------------------|
-| HU-01 | Crear cuenta bancaria validada | Alta | _Por definir_ |
-| HU-02 | Activar e inactivar cuenta bancaria | Alta | _Por definir_ |
-| HU-03 | Consultar saldo de cuenta bancaria | Alta | _Por definir_ |
-| HU-04 | Actualizar información de cuenta bancaria | Media | _Por definir_ |
-
----
