@@ -33,7 +33,8 @@
 | **Descripción** | Como **asesor** quiero poder crear una cuenta bancaria para un cliente, ingresando el número de cuenta de 10 dígitos y el banco asociado, para garantizar que la cuenta cumple las reglas de negocio antes de ser registrada en el sistema. |
 | **Prioridad** | **Alta** |
 | **Justificación de prioridad** | Es el punto de entrada del sistema. Sin la capacidad de crear cuentas no es posible ejecutar ninguna otra funcionalidad (consulta de saldo, depósitos, reportes). Bloquea a todas las demás historias de usuario. |
-| **Estimación** | 10 puntos |
+| **Estimación** | 8 puntos |
+
 
 
 ---
@@ -47,7 +48,7 @@
 | **Descripción** | Como **asesor o cliente** quiero poder activar o inactivar una cuenta bancaria existente para controlar si dicha cuenta puede ser usada en operaciones financieras (depósitos, consultas), protegiendo al cliente de movimientos no autorizados. |
 | **Prioridad** | **Alta** |
 | **Justificación de prioridad** | El ciclo de vida de una cuenta (activa/inactiva) es un requisito de negocio básico señalado explícitamente por el gerente de operaciones. Sin este control, las cuentas no podrían ser bloqueadas ante situaciones de riesgo. |
-| **Estimación** | 6 puntos |
+| **Estimación** | 5 puntos |
 
 ---
 
@@ -60,7 +61,7 @@
 | **Descripción** | Como **cliente** quiero poder consultar el saldo actual de mi cuenta bancaria para conocer en tiempo real el dinero disponible y tomar decisiones financieras informadas. |
 | **Prioridad** | **Alta** |
 | **Justificación de prioridad** | Es una funcionalidad esencial de cualquier sistema bancario y uno de los requerimientos explícitos de Bankify para la primera versión del producto. Los clientes la usarán con alta frecuencia. |
-| **Estimación** | 2 puntos |
+| **Estimación** | 3 puntos |
 
 ---
 
@@ -73,7 +74,7 @@
 | **Descripción** | Como **asesor** quiero poder actualizar los datos de una cuenta bancaria existente (por ejemplo, tipo de cuenta o información adicional) para mantener la información del cliente actualizada y correcta dentro del sistema. |
 | **Prioridad** | **Media** |
 | **Justificación de prioridad** | Aunque es necesaria para la operación completa del módulo, no bloquea las funcionalidades principales (crear, consultar, activar/inactivar). Puede desarrollarse en un sprint posterior una vez las historias de alta prioridad estén implementadas. |
-| **Estimación** | 6 puntos |
+| **Estimación** | 5 puntos |
 
 ---
 
@@ -179,6 +180,48 @@
 | **Título** | Implementar servicio de actualización de cuenta |
 | **ID Historia asociada** | DLC-5 |
 | **Descripción** | Como **desarrollador** quiero implementar el servicio que permita actualizar los campos permitidos de una cuenta bancaria, validando que la cuenta exista y que el usuario tenga el rol de asesor para ejecutar la operación. |
+| **Tareas requisito** | DLC-15 |
+
+| Campo | Descripción |
+|-------|-------------|
+| **ID** | DLC-17 |
+| **Título** | Crear endpoint REST para actualización de cuenta |
+| **ID Historia asociada** | DLC-5 |
+| **Descripción** | Como **desarrollador** quiero exponer un endpoint REST (PUT /cuentas/{id}) que reciba los campos a actualizar, aplique las validaciones necesarias y persista los cambios en la base de datos, retornando la cuenta actualizada. |
+| **Tareas requisito** | DLC-15, DLC-16 |
+
+---
+
+## 4. Sprint Planning
+
+### Sprint 1
+
+**Objetivo del Sprint:** Implementar la funcionalidad base de creación de cuentas bancarias y consulta de saldo, estableciendo el MVP del sistema Bankify.
+
+**Duración:** 2 semanas
+
+**Historias incluidas:**
+- DLC-2: Crear cuenta bancaria validada (8 puntos)
+- DLC-4: Consultar saldo de cuenta bancaria (3 puntos)
+
+**Total de puntos:** 11 puntos
+
+**Tareas del Sprint 1 y asignaciones:**
+
+| ID Tarea | Título | Historia | Asignado a |
+|----------|---------|----------|------------|
+| DLC-6 | Implementar validación del número de cuenta | DLC-2 | Rafael Moreno |
+| DLC-7 | Implementar validación del banco asociado | DLC-2 | Rafael Moreno |
+| DLC-8 | Crear endpoint REST para registro de cuenta | DLC-2 | Cristian Gonzalez |
+| DLC-12 | Implementar servicio de consulta de saldo | DLC-4 | Rafael Moreno |
+| DLC-13 | Controlar acceso a la consulta por propietario | DLC-4 | Cristian Gonzalez |
+| DLC-14 | Crear endpoint REST para consulta de saldo | DLC-4 | Cristian Gonzalez |
+
+**Justificación:**
+- DLC-2 es crítica y bloqueante para todas las demás funcionalidades
+- DLC-4 es la funcionalidad más básica que complementa la creación de cuentas
+- La carga de 11 puntos es apropiada para un equipo de 2 desarrolladores en su primer sprint
+- Las tareas se distribuyeron equilibradamente según las fortalezas de cada integrantea, validando que la cuenta exista y que el usuario tenga el rol de asesor para ejecutar la operación. |
 | **Tareas requisito** | DLC-15 |
 
 | Campo | Descripción |
