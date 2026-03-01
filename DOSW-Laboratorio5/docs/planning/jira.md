@@ -134,7 +134,7 @@ La implementación de los requerimientos identificados de Bankify se desglosa de
 
 ### 6. Sprint Backlog:
 
-![Sprint 1 en Jira](../../images/sprint1.png)
+![Sprint 1 en Jira]![(../../images/sprint1.png)](../images/Spriny.png)
 
 #### Justificación de la planeación del Sprint 1:
 
