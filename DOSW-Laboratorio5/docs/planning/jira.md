@@ -129,3 +129,30 @@ La implementación de los requerimientos identificados de Bankify se desglosa de
 ### 5. Backlog:
 
 ![Backlog en Jira](../../images/BackLog.png)
+
+---
+
+### 6. Sprint Backlog:
+
+![Sprint 1 en Jira]![(../../images/sprint1.png)](../images/Spriny.png)
+
+#### Justificación de la planeación del Sprint 1:
+
+Para el primer sprint decidimos incluir las historias **DLC-2** (Crear cuenta bancaria - 8 puntos) y **DLC-4** (Consultar saldo - 3 puntos), totalizando **11 puntos de historia**.
+
+**Razones de esta decisión:**
+
+1. **DLC-2 es bloqueante:** Sin la capacidad de crear cuentas, ninguna otra funcionalidad puede operar. Es la base del sistema.
+
+2. **DLC-4 complementa el MVP:** Después de crear cuentas, consultar saldo es la funcionalidad más básica que los usuarios esperan.
+
+3. **Capacidad del equipo:** Con 2 desarrolladores y asumiendo una velocidad inicial conservadora, 11 puntos es una carga razonable para un sprint de 2 semanas.
+
+4. **DLC-3 se pospone:** Aunque tiene prioridad alta, depende de DLC-2 y agregar sus 5 puntos (total 16) sobrecarga el sprint inicial.
+
+5. **DLC-5 es prioridad media:** Se desarrollará en sprints posteriores.
+
+**Asignación de tareas:**
+
+- **Rafael Moreno:** DLC-6, DLC-7, DLC-12
+- **Cristian Gonzalez:** DLC-8, DLC-13, DLC-14
