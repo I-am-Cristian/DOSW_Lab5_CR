@@ -33,7 +33,8 @@
 | **Descripción** | Como **asesor** quiero poder crear una cuenta bancaria para un cliente, ingresando el número de cuenta de 10 dígitos y el banco asociado, para garantizar que la cuenta cumple las reglas de negocio antes de ser registrada en el sistema. |
 | **Prioridad** | **Alta** |
 | **Justificación de prioridad** | Es el punto de entrada del sistema. Sin la capacidad de crear cuentas no es posible ejecutar ninguna otra funcionalidad (consulta de saldo, depósitos, reportes). Bloquea a todas las demás historias de usuario. |
-| **Estimación** | _Puntos de historia_ |
+| **Estimación** | 8 puntos |
+
 
 ---
 
@@ -46,7 +47,7 @@
 | **Descripción** | Como **asesor o cliente** quiero poder activar o inactivar una cuenta bancaria existente para controlar si dicha cuenta puede ser usada en operaciones financieras (depósitos, consultas), protegiendo al cliente de movimientos no autorizados. |
 | **Prioridad** | **Alta** |
 | **Justificación de prioridad** | El ciclo de vida de una cuenta (activa/inactiva) es un requisito de negocio básico señalado explícitamente por el gerente de operaciones. Sin este control, las cuentas no podrían ser bloqueadas ante situaciones de riesgo. |
-| **Estimación** | _Puntos de historia_ |
+| **Estimación** | 5 puntos |
 
 ---
 
@@ -59,7 +60,7 @@
 | **Descripción** | Como **cliente** quiero poder consultar el saldo actual de mi cuenta bancaria para conocer en tiempo real el dinero disponible y tomar decisiones financieras informadas. |
 | **Prioridad** | **Alta** |
 | **Justificación de prioridad** | Es una funcionalidad esencial de cualquier sistema bancario y uno de los requerimientos explícitos de Bankify para la primera versión del producto. Los clientes la usarán con alta frecuencia. |
-| **Estimación** | _Puntos de historia_ |
+| **Estimación** | 3 puntos |
 
 ---
 
@@ -72,7 +73,7 @@
 | **Descripción** | Como **asesor** quiero poder actualizar los datos de una cuenta bancaria existente (por ejemplo, tipo de cuenta o información adicional) para mantener la información del cliente actualizada y correcta dentro del sistema. |
 | **Prioridad** | **Media** |
 | **Justificación de prioridad** | Aunque es necesaria para la operación completa del módulo, no bloquea las funcionalidades principales (crear, consultar, activar/inactivar). Puede desarrollarse en un sprint posterior una vez las historias de alta prioridad estén implementadas. |
-| **Estimación** | _Puntos de historia_ |
+| **Estimación** | 5 puntos |
 
 ---
 
